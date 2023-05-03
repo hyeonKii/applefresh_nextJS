@@ -1,3 +1,5 @@
+'use client'
+
 import {age, name} from "./data"
 
 export default function Cart() {
@@ -24,9 +26,10 @@ export default function Cart() {
     )
   }
 
-  const OnPay = (props) => {
+  const OnPay = () => {
     return <button 
             style={{background: "red"}}
+            onClick={() => alert('pay success')}
             >
               결제
             </button>
